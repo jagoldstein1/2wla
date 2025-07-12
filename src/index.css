@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.modern-logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.modern-logo:hover {
+  letter-spacing: 0.3em;
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  .modern-logo {
+    font-size: 1.75rem;
+    letter-spacing: 0.3em;
+  }
+  
+  .modern-logo:hover {
+    letter-spacing: 0.35em;
+  }
+}
