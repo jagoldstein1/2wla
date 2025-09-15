@@ -1106,14 +1106,14 @@ export function CalendarView({
                                     <div className="absolute right-0 top-8 bg-white border border-gray-200 rounded-md shadow-lg z-[9999] min-w-[140px]">
                                       <button
                                         onClick={() => handleEditTask(task, phase.id)}
-                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center gap-2"
+                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center gap-2 relative z-[10000]"
                                       >
                                         <Edit2 className="w-4 h-4" />
                                         Edit
                                       </button>
                                       <button
                                         onClick={() => handleEditTimeline(task)}
-                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center gap-2"
+                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center gap-2 relative z-[10000]"
                                         disabled={timeUnit !== 'D'}
                                       >
                                         <Calendar className="w-4 h-4" />
@@ -1121,7 +1121,7 @@ export function CalendarView({
                                       </button>
                                       <button
                                         onClick={() => handleDeleteTask(phase.id, task.id)}
-                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 text-red-600 flex items-center gap-2"
+                                        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 text-red-600 flex items-center gap-2 relative z-[10000]"
                                       >
                                         <Trash2 className="w-4 h-4" />
                                         Delete
