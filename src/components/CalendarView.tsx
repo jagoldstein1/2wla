@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { format, startOfWeek, addDays, isToday, addWeeks, isWeekend, isSameWeek, startOfMonth, addMonths, getWeek, getYear, subWeeks, subMonths, isThisWeek, isThisMonth, isThisYear } from 'date-fns';
-import { Plus, Users, Edit2, Trash2, Calendar, MoreVertical, X, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
+import { Plus, Users, Edit2, Trash2, Calendar, CalendarDays, MoreVertical, X, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import type { Task, Phase, ViewMode, CellStatus, TimeUnit } from '../types';
 import { TaskModal } from './TaskModal';
 import { PhaseModal } from './PhaseModal';

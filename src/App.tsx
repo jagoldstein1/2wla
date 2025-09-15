@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List, Users, Calendar } from 'lucide-react';
+import { List, Users, CalendarDays } from 'lucide-react';
 import { ViewMode, Phase, TimeUnit } from './types';
 import { CalendarView } from './components/CalendarView';
 import { TodayView } from './components/TodayView';
@@ -178,7 +178,7 @@ function App() {
               }`}
               title="Toggle Weekends"
             >
-              <Calendar className="w-4 h-4" />
+              <CalendarDays className="w-4 h-4" />
             </button>
           </div>
 
